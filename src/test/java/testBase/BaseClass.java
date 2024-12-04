@@ -52,7 +52,8 @@ public class BaseClass {
 
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		driver.get(p.getProperty("Url"));
+//		driver.get(p.getProperty("Url"));
+		driver.get(p.getProperty("url_HDFC"));
 		driver.manage().window().maximize();
 	}
 
